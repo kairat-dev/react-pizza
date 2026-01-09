@@ -18,7 +18,7 @@ const [active, setActive] = useState(0);
       <ul>
         {categories.map((name, index) => (
        <li
-          key={name}
+          key={index}
           onClick={() => setActive(index)}
           className={active === index ? "active" : " "}
        >
